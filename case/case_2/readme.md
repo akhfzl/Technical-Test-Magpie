@@ -1,0 +1,4 @@
+Scraping menggunakan tools selenium python 3.7.0
+1. Mencari tag elemen yang sesuai dan dapat di scrap, untuk mencegah elemen dinamis maka lebih dominan menggunakan Xpath
+2. Website tokopedia tidak semudah di scraping sebab website tersebut menerapkan infinity scroll sehingga untuk memuat data memerlukan scroll dan waktu jeda
+3. Struktur tokopedia terdiri cards untuk menampilkan beberapa produk penjualan seperti nama produk, harga, diskon, jumlah penjualan, sisa produk, lokasi dsb. Namun setiap produk penjualan memiliki data yang berbeda-beda sehingga scraping menggunakan pendekatan yaitu mengambil elemen dari card tersebut alias parent card. 

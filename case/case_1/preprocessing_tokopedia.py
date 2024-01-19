@@ -90,5 +90,7 @@ class PreprocessingTokopedia:
         return df
 
     def mergeSeveralData(self, arrDf):
-        return pd.concat(arrDf, ignore_index=True)
+        df= pd.concat(arrDf, ignore_index=True)
+        df.to_csv(f'{self.save_to_excel}/finalResult.csv', index=False)
+        return df.head()
                 
